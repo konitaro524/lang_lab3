@@ -1,0 +1,34 @@
+FuncTab
+ func #1
+ main #2
+
+SymTab
+id(1)
+ v1 #1, offset(-12)
+ v2 #2, offset(-8)
+ v3 #3, offset(-4)
+ a1 #4, offset(-16)
+ a2 #5, offset(-20)
+ a3 #6, offset(-24)
+ a4 #7, offset(-28)
+ a5 #8, offset(-32)
+ a6 #9, offset(-36)
+ a7 #10, offset(-40)
+ a8 #11, offset(-44)
+id(2)
+ a #1, offset(-4)
+root
+ func[ identifier(r0)(func)] ( param(r0)( identifier(r0)(a1)) param(r0)( identifier(r0)(a2)) param(r0)( identifier(r0)(a3)) param(r0)( identifier(r0)(a4)) param(r0)( identifier(r0)(a5)) param(r0)( identifier(r0)(a6)) param(r0)( identifier(r0)(a7)) param(r0)( identifier(r0)(a8)))
+  l(3): declaration( identifier(r0)(v1 identifier(r0)(v2 identifier(r0)(v3))))
+  l(5): stm_asign( exp_asign(r1)( identifier(r1)(v1) add(r0)( add(r0)( add(r0)( add(r0)( add(r0)( add(r0)( add(r0)( identifier(r0)(a1) identifier(r1)(a2)) identifier(r1)(a3)) identifier(r1)(a4)) identifier(r1)(a5)) identifier(r1)(a6)) identifier(r1)(a7)) identifier(r1)(a8))))
+  l(6): stm_asign( exp_asign(r0)( identifier(r0)(v2) const_int(r1)(9)))
+  l(7): stm_asign( exp_asign(r0)( identifier(r0)(v3) const_int(r1)(10)))
+  l(8): stm_asign( exp_asign(r1)( identifier(r1)(v1) add(r0)( add(r0)( identifier(r0)(v1) identifier(r1)(v2)) identifier(r1)(v3))))
+  l(9): stm_asign( call(r0)( identifier(r0)(put_int) ( identifier(r0)(v1))))
+  l(10): return( identifier(r0)(v1))
+
+ func[ identifier(r0)(main)] ()
+  l(15): declaration( identifier(r0)(a))
+  l(16): stm_asign( exp_asign(r0)( identifier(r0)(a) call(r1)( identifier(r0)(func) ( const_int(r0)(1) const_int(r0)(2) const_int(r0)(3) const_int(r0)(4) const_int(r0)(5) const_int(r0)(6) const_int(r0)(7) const_int(r0)(8)))))
+  l(17): stm_asign( call(r0)( identifier(r0)(put_int) ( identifier(r0)(a))))
+
